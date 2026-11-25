@@ -52,8 +52,8 @@ if show_market_cap:
     st.subheader("Market Cap by Sector")
     st.bar_chart(
         ticker_info, 
-        x="Market Cap (B)", 
-        y="Sector", 
+        x="Sector", 
+        y="Market Cap (B)", 
         color="Ticker", 
         horizontal=True
     )
