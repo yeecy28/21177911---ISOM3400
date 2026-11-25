@@ -121,16 +121,13 @@ with col2:
 
 with st.container(border=True, width=640, height=400, horizontal_alignment="center"):
     if not st.session_state.clicked:
-        # Before submission message
+       
         st.info("Please enter a video URL and click Submit to display the video.")
     else:
-        # Try to load the video, catch exceptions for invalid URLs
+        
         try:
             st.video(st.session_state.video_url)
         except Exception:
             st.error("Error: The video could not be loaded. Please check the URL and try again.")
-
-
-
 
 # --- STUDENT CODE AREA END ---
